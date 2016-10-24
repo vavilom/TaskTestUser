@@ -12,7 +12,6 @@ namespace TaskTestUser.Controllers
         [HttpPost]
         public JsonResult Create([Bind(Include = "FirstName,LastName,MiddleName")] Person person)
         {
-            var t = person;
             return Json(person);
         }
     }
